@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+body {
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #f4f4f4;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 0 0 10px 10px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.landing-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  background-color: #fff;
+}
+
+.landing-text h2 {
+  text-align: center;
+}
+
+.landing-text nav {
+  padding-top: 20px;
+}
+
+.landing-text nav li {
+  display: inline-block;
+}
+
+.landing-text nav button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 8%;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.landing-text nav button:hover {
+  color: white;
+  background-color: black;
+}
+
+.slider {
+  height: 50vh;
+  background-image: url(https://source.unsplash.com/SYTO3xs06fU/1980x1080);
+  background-position: center;
+  background-size: cover;
+}
+
+.project1 {
+  background-image: url(img/project_1.png);
+}
+
+.project2 {
+  background-image: url(img/project_2.png);
+}
+
+.project3 {
+  background-image: url(img/project_3.png);
+}
+
+.project4 {
+  background-image: url(img/project_4.png);
+}
+
+.projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 20vh;
+  -webkit-transition: -webkit-box-flex .5s;
+  transition: -webkit-box-flex .5s;
+  transition: flex .5s;
+  transition: flex .5s, -webkit-box-flex .5s, -ms-flex .5s;
+}
+
+.projects li.open {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.projects .project {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills ul li {
+  display: inline-block;
+  font-size: 4rem;
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 10px;
+  background-color: #1b1b1b;
+  text-align: center;
+}
+
+footer h3 {
+  margin: 0;
+  color: white;
+}
+
+footer .about {
+  font-size: 1rem;
+  color: white;
+}
+
+footer .social-media {
+  padding-top: 10px;
+}
+
+footer .social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social-media a {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #6f7273;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #6f7273;
+  -webkit-transition: color .5s, background-color .5s;
+  transition: color .5s, background-color .5s;
+}
+
+footer .social-media a:hover {
+  color: white;
+  background-color: black;
+}
+
+#top {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 3rem;
+    margin-left: 20px;
+  }
+  .landing-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .landing-text nav {
+    padding: 0 0 0 20px;
+  }
+  .landing-text nav li {
+    display: block;
+  }
+  .landing-text nav button {
+    margin: 15px 0 0 0;
+    font-size: 1rem;
+  }
+  .projects ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .projects li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 78vh;
+  }
+  .skills ul li {
+    font-size: 5rem;
+  }
+  footer .about {
+    font-size: 1.5rem;
+  }
+  footer .social-media ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .social-media li {
+    margin-left: 20px;
+    -webkit-transform: translate(-10px);
+            transform: translate(-10px);
+  }
+  footer .social-media a {
+    font-size: 1.5rem;
+  }
+  #top {
+    display: initial;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 40px;
+  }
+  #top button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: color .5s, background-color .5s, -webkit-transform .5s;
+    transition: color .5s, background-color .5s, -webkit-transform .5s;
+    transition: color .5s, background-color .5s, transform .5s;
+    transition: color .5s, background-color .5s, transform .5s, -webkit-transform .5s;
+  }
+  #top button:hover {
+    color: black;
+    background-color: #ccc;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1025px) {
+  h3 {
+    margin-left: 30px;
+  }
+  .landing-text nav {
+    padding: 0 0 0 30px;
+  }
+  .landing-text nav button {
+    margin: 30px 0 0 0;
+    font-size: 2rem;
+  }
+  .skills ul {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .skills ul li {
+    font-size: 7rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

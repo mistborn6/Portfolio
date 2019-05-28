@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+}
+
+#topBlock {
+    margin-bottom: 2rem;
+    height: 5rem;
+    background-color: #4a90e2;
+    text-align: center;
+}
+
+.bookmark {
+    border: none;
+    background-color: #4a90e2;
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #004088;
+}
+
+.selectBookmark {
+    border-bottom: 5px solid #004088;
+    height: 4rem;
+    color: #fff;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+
+.inputName {
+    padding: 25px 0 10px 50px;
+}
+
+.inputTaskForm {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.inputTask {
+    height: 385px;
+    background-color: #f2f2f2;
+    text-align-last: left;
+}
+
+.inputForm {
+    padding-left: 75px;
+}
+
+.inputStyle {
+    border: none;
+    font-size: 16px;
+}
+
+.inputDate {
+    margin-right: 20px;
+    width: 160px;
+    height: 35px;
+}
+
+.button {
+    border: none;
+    width: 310px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cancelButton {
+    background-color: #fffffd;
+    color: #d0021b;
+}
+
+.addButton {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.inputTaskTitle{
+    width: 620px;
+    height: 75px;
+    background: #F2F2F2;
+    margin:0px auto;
+    text-align: left;
+    border-bottom:solid 3px #C8C8C8 ;
+}
+
+.taskTitle{
+    background: #F2F2F2;
+    border:none;
+    height: 28px;
+    width: 380px;
+    font-size: 24px;
+    margin: 25px;
+}
+
+.taskChk{
+    margin-left: 20px;
+    zoom: 2;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+.icon_edit{
+    color: #4A90E2;
+}
+
+#addTask {
+    width: 620px;
+    height: 65px;
+    font-size: 24px;
+    color: #C8C8C8;
+    border: 2px solid #C8C8C8;
+    border-radius: 5px;
+}
+
+
+.list{
+    background: #F2F2F2;
+    height: 100px;
+    width: 620px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.listBlock{
+    margin-top: 20px;
+}
+
+.listIcon{
+    color: #757575;
+    margin-top: -15px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.complete {
+    color: #9b9b9b;
+    text-decoration: line-through;
+}
+
+.important {
+    background-color: #fff2dc;
+}
+
+.iconImportant {
+    color: #f5a623;
+}
+
+.countText{
+    margin:5px;
+    text-align: left;
+    font-size: 24px;
+    color: #C8C8C8;
+}

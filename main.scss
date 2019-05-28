@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(244,244,244);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0 0 10px 10px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+// main
+
+.landing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #fff;
+    h2 {
+        text-align: center;
+    }
+    nav {
+        padding-top: 20px;
+        li {
+            display: inline-block;
+        }
+        button {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 8%;
+            background-color: white;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover {
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+}
+
+
+.slider {
+    height: 50vh;
+    background-image: url(https://source.unsplash.com/SYTO3xs06fU/1980x1080);
+    background-position: center;
+    background-size: cover;
+}
+
+.project1 {
+    background-image: url(img/project_1.png);
+}
+.project2 {
+    background-image: url(img/project_2.png);
+}
+.project3 {
+    background-image: url(img/project_3.png);
+}
+.project4 {
+    background-image: url(img/project_4.png);
+}
+
+.projects {
+    ul {    
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        flex: 1;
+        height: 20vh;
+        transition: flex .5s;
+        &.open {
+            flex: 5;
+        }
+    }
+    .project {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.skills {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+            display: inline-block;
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+footer {
+    padding-bottom: 10px;
+    background-color: #1b1b1b;
+    text-align: center;
+    h3 {
+        margin: 0;
+        color: white;
+    }
+
+    .about {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .social-media {
+        padding-top: 10px;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        a {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #6f7273;
+            border-radius: 50%;
+            font-size: 1rem;
+            color: #6f7273;
+            transition: color .5s, background-color .5s;
+            &:hover {
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+}
+
+#top {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    .landing-text {
+        flex-direction: row;
+        nav {
+            padding: 0 0 0 20px;
+            li {
+                display: block;
+            }
+            button {
+                margin: 15px 0 0 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .projects {
+        ul {
+            flex-direction: row;
+        }
+        li {
+            flex: 1;
+            height: 78vh;
+        }
+    }
+
+    .skills{
+        ul {
+            li {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    footer {
+        .about {
+            font-size: 1.5rem;
+        }
+
+        .social-media {
+            ul {
+                justify-content: center;
+            }
+            li {
+                margin-left: 20px;
+                transform: translate(-10px);
+            }
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    #top {
+        display: initial;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        text-align: center;
+        line-height: 40px;
+        button {
+            display: inline-block;
+            padding: 0;
+            border: none;
+            width: 40px;
+            height: 40px;
+            outline: none;
+            color: #ccc;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: color .5s, background-color .5s, transform .5s;
+            &:hover {
+                color: black;
+                background-color: #ccc;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    h3 {
+        margin-left: 30px;
+    }
+
+    .landing-text {
+        nav {
+            padding: 0 0 0 30px;
+            button {
+                margin: 30px 0 0 0;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .skills{
+        ul {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            li {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+
+
